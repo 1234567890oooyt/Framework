@@ -11,9 +11,10 @@ import webUI.decorator.MyInput;
 public class ProblemPage extends BaseObject {
     @FindBy(xpath ="/html/body/div[1]/div/div[2]/ul/li[2]/a")
     private MyButton openSelect;
-    @FindBy(xpath ="/html/body/div[1]/div/div[2]/ul/li[2]/ul/li[3]/div/ul/li[7]/a")
+    @FindBy(xpath ="//*[@id=\"projects-list\"]/li[3]/div/ul/li[5]/a")
     private MyButton chooseProject;
-
+    @FindBy(xpath ="//*[@id=\"select-project-form\"]/div/div[2]/div[2]/input")
+    private MyButton clickProject;
     public ProblemPage(WebDriver driver) {
         super(driver);
     }
@@ -23,6 +24,7 @@ public class ProblemPage extends BaseObject {
     }
     public CreateProblemPage chooseOption(){
         chooseProject.myClick();
+        clickProject.myClick();
         return new CreateProblemPage(driver);
     }
 }

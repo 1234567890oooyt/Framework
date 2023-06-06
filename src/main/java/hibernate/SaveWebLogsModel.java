@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.sql.Blob;
 
 @Entity
 @Table(name = "WebLogs")
@@ -22,7 +23,7 @@ public class SaveWebLogsModel {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "Dom",length = 5000)
+    @Column(name = "Dom",length = 15000)
     private String Dom;
 
     @Column(name = "Logger")

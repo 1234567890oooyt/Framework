@@ -36,4 +36,17 @@ public class LogInPage extends BaseObject {
 
         return this;
     }
+    public LogInPage writeUserNameForDataProvider(String name ){
+//        WebElement nameInput = driver.findElement(userNameInput);
+        userNameInput.input(name);
+        userNameButton.myClick();
+        return this;
+    }
+    public LogInPage writeUserPasswordForDataProvider(String pass) throws InterruptedException {
+        Thread.sleep(1000);
+        userPasswordInput.input(pass);
+        userPasswordButton.myClick();
+
+        return this;
+    }
 }

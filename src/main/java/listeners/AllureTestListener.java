@@ -29,7 +29,7 @@ public class AllureTestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         ITestListener.super.onTestFailure(result);
         getScreenshot();
-//        getDom();
+        getDom();
 //        beginTrans();
 //        saveToWebLogs(result.getEndMillis(),getDom(),result.getName());
 //        closeSession();
@@ -41,6 +41,8 @@ public class AllureTestListener implements ITestListener {
         getScreenshot();
         getDom();
         System.out.println(getDom());
+
+
     }
     @Override
     public void onFinish(ITestContext context) {
