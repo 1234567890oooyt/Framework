@@ -1,0 +1,385 @@
+<html><head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Проекти - MantisBT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/default.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/status_config.php?cache_key=aa1f2a23a907e5ec5c9ef47830e8b025">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/dropzone-5.5.0.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/bootstrap-3.4.1.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/font-awesome-4.7.0.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/bootstrap-datetimepicker-4.17.47.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/ace.min.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/ace-mantis.css">
+	<link rel="stylesheet" type="text/css" href="http://localhost/css/ace-skins.min.css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: повнотекстовий пошук" href="http://localhost/browser_search_plugin.php?type=text">
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: пошук за ідентифікатором проблеми" href="http://localhost/browser_search_plugin.php?type=id">
+	<script type="text/javascript" src="/javascript_config.php?cache_key=aa1f2a23a907e5ec5c9ef47830e8b025"></script>
+	<script type="text/javascript" src="/javascript_translations.php?cache_key=17dafd49333a73d719b2f6092aa4545a"></script>
+	<script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/js/dropzone-5.5.0.min.js"></script>
+	<script type="text/javascript" src="/js/common.js"></script>
+</head>
+<body class="skin-3">
+<style>
+* { font-family: "Open Sans"; } 
+h1, h2, h3, h4, h5 { font-family: "Open Sans"; } 
+</style>
+<div id="navbar" class="navbar navbar-default navbar-collapse navbar-fixed-top noprint"><div id="navbar-container" class="navbar-container"><button id="menu-toggler" type="button" class="navbar-toggle menu-toggler pull-left hidden-lg hidden-md" data-target="#sidebar"><span class="sr-only">Toggle sidebar</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div class="navbar-header"><a href="/my_view_page.php" class="navbar-brand"><span class="smaller-75"> MantisBT </span></a><button type="button" class="navbar-toggle navbar-toggle collapsed pull-right hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-buttons,.navbar-menu"><span class="sr-only">Toggle user menu</span><i class="fa fa-user ace-icon fa-2x white"></i> </button></div><div class="navbar-buttons navbar-header navbar-collapse collapse"><ul class="nav ace-nav"><li class="hidden-sm hidden-xs"><div class="btn-group btn-corner padding-right-8 padding-left-8"><a class="btn btn-primary btn-sm" href="bug_report_page.php"><i class="fa fa-edit "></i> Нова проблема</a><a class="btn btn-primary btn-sm" href="manage_user_create_page.php"><i class="fa fa-user-plus "></i> Запросити користувачів</a></div></li>
+<li class="grey" id="dropdown_projects_menu">
+<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+&nbsp;aa39e909-e725-47f2-92ee-3afda74e714e&nbsp;
+<i class="fa fa-angle-down ace-icon bigger-110"></i>
+</a>
+<ul id="projects-list" class=" dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close">
+<li><div class="projects-searchbox"><input class="search form-control input-md" placeholder="Знайти"></div></li>
+<li class="divider"></li>
+<li><div class="scrollable-menu">
+<ul class="list dropdown-yellow no-margin"><li><a class="project-link" href="/set_project.php?project_id=0">Всі проекти</a></li><li class="divider"></li><li><a class="project-link" href="/set_project.php?project_id=28">14c9ee5c-8930-4549-97e4-190c878c3d64</a></li><li><a class="project-link" href="/set_project.php?project_id=18">2d5286e0-821c-487c-b2aa-b82580024422</a></li><li><a class="project-link" href="/set_project.php?project_id=22">3ad902e0-01c1-495f-9ee3-6090cb9baad6</a></li><li><a class="project-link" href="/set_project.php?project_id=26">4a29bd77-bd82-4002-a1e1-2c27891fb41c</a></li><li><a class="project-link" href="/set_project.php?project_id=13">867bfd10-d811-4d1c-81f8-116a8cc13f08</a></li><li><a class="project-link" href="/set_project.php?project_id=29">92ba10b2-f3e1-4754-80a9-9c51876225e1</a></li><li><a class="project-link" href="/set_project.php?project_id=11">984ab190-f261-46a0-a3fe-d6b7953b8ce8</a></li><li><a class="project-link" href="/set_project.php?project_id=25">9936e702-63e3-448d-822d-2c29cb15ab99</a></li><li><a class="project-link" href="/set_project.php?project_id=20">a57a752a-2a9e-46a4-b2df-e054e5bb636d</a></li><li><a class="project-link" href="/set_project.php?project_id=23">a6ba496d-1e29-4a4b-a05a-e73466119587</a></li><li class="active"><a class="project-link" href="/set_project.php?project_id=14">aa39e909-e725-47f2-92ee-3afda74e714e</a></li><li><a class="project-link" href="/set_project.php?project_id=15">c2cc2397-3fb7-4952-8566-46dac105c25b</a></li><li><a class="project-link" href="/set_project.php?project_id=19">c3accb0c-1d87-457c-b248-9de41500f9f2</a></li><li><a class="project-link" href="/set_project.php?project_id=17">d8682961-f217-490d-9fae-36b527555989</a></li><li><a class="project-link" href="/set_project.php?project_id=16">e2e4b9ab-6507-4a6b-aee5-e4dcc7d54149</a></li><li><a class="project-link" href="/set_project.php?project_id=10">e3ab44c4-59ae-45f9-be24-56b55bbd6501</a></li><li><a class="project-link" href="/set_project.php?project_id=24">ebbd9231-a42b-4d5e-9036-da0499a13507</a></li><li><a class="project-link" href="/set_project.php?project_id=27">f9d58cc9-61ba-4e65-8687-1b29c7a5bccd</a></li><li><a class="project-link" href="/set_project.php?project_id=12">fbff973c-5ca4-435e-afa3-4d903012137a</a></li><li><a class="project-link" href="/set_project.php?project_id=21">fd2b1d06-eaad-4cc4-9d8e-4ada4090e9f0</a></li></ul>
+</div>
+</li>
+</ul>
+</li>
+<li class="grey"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-user ace-icon fa-2x white"></i> <span class="user-info">administrator</span><i class="fa fa-angle-down ace-icon"></i></a><ul class="user-menu dropdown-menu dropdown-menu-right dropdown-yellow dropdown-caret dropdown-close"><li><a href="/account_page.php"><i class="fa fa-user ace-icon"></i> Мій запис</a></li><li><a href="http://localhost/issues_rss.php?username=administrator&amp;key=b3-314oG0Jbg4uuZdYWhFEziXenqRtVgA6mqgIjfaaeU5BsEFBnUjleQ3YcS5hxnPf6wJ-os5qs9FBa9AGgD&amp;project_id=14"><i class="fa fa-rss-square orange ace-icon"></i> RSS</a></li><li class="divider"></li><li><a href="/logout_page.php"><i class="fa fa-sign-out ace-icon"></i> Вийти</a></li></ul></li></ul></div></div></div><div class="main-container" id="main-container" style="padding-top: 45px;">
+<div id="sidebar" class="sidebar sidebar-fixed responsive compact "><ul class="nav nav-list"><li>
+<a href="/my_view_page.php">
+<i class="fa fa-dashboard menu-icon"></i>
+<span class="menu-text"> Моя сторінка </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/view_all_bug_page.php">
+<i class="fa fa-list-alt menu-icon"></i>
+<span class="menu-text"> Браузер проблем </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/bug_report_page.php">
+<i class="fa fa-edit menu-icon"></i>
+<span class="menu-text"> Нова проблема </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/changelog_page.php">
+<i class="fa fa-retweet menu-icon"></i>
+<span class="menu-text"> Хронологія </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/roadmap_page.php">
+<i class="fa fa-road menu-icon"></i>
+<span class="menu-text"> Дорожня карта </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li>
+<a href="/summary_page.php">
+<i class="fa fa-bar-chart-o menu-icon"></i>
+<span class="menu-text"> Статистика </span>
+</a>
+<b class="arrow"></b>
+</li>
+<li class="active">
+<a href="/manage_overview_page.php">
+<i class="fa fa-gears menu-icon"></i>
+<span class="menu-text"> Управління </span>
+</a>
+<b class="arrow"></b>
+</li>
+</ul><div id="sidebar-btn" class="sidebar-toggle sidebar-collapse"><i data-icon2="ace-icon fa fa-angle-double-right" data-icon1="ace-icon fa fa-angle-double-left" class="ace-icon fa fa-angle-double-left"></i></div></div><div class="main-content">
+<div id="breadcrumbs" class="breadcrumbs noprint">
+<ul class="breadcrumb">
+  <li><i class="fa fa-user home-icon active"></i>  <a href="/account_page.php">administrator ( Oleh ) </a>
+  <span class="label hidden-xs label-default arrowed">Адміністратор</span></li>
+</ul>
+<div class="nav-recent hidden-xs">Недавно відвідані: <a href="/view.php?id=16" title="[призначена] 673d193d-bcd4-407b-b823-63c6a97fb06a">0000016</a>, <a href="/view.php?id=15" title="[призначена] b616efdd-da00-4624-bda1-89ff77192898">0000015</a>, <a href="/view.php?id=14" title="[призначена] d69119f4-6d50-497c-965f-03607eaf6987">0000014</a>, <a href="/view.php?id=13" title="[призначена] b3751171-44bb-4419-8565-af81c4044360">0000013</a>, <a href="/view.php?id=12" title="[призначена] 0e6f998d-decb-43d9-9b80-bd242360291b">0000012</a></div><div id="nav-search" class="nav-search"><form class="form-search" method="post" action="/jump_to_bug.php"><span class="input-icon"><input type="text" name="bug_id" autocomplete="off" class="nav-search-input" placeholder="Проблема #"><i class="fa fa-search ace-icon nav-search-icon"></i></span></form></div>
+</div>
+  <div class="page-content">
+<div class="row">
+<ul class="nav nav-tabs padding-18">
+<li class=""><a href="manage_overview_page.php"><i class="fa fa-info-circle blue ace-icon"></i></a></li>
+<li class=""><a href="/manage_user_page.php">Користувачі</a></li>
+<li class="active"><a href="/manage_proj_page.php">Проекти</a></li>
+<li class=""><a href="/manage_tags_page.php">Управління тегами</a></li>
+<li class=""><a href="/manage_custom_field_page.php">Власні поля</a></li>
+<li class=""><a href="/manage_prof_menu_page.php">Керування глобальними профілями</a></li>
+<li class=""><a href="/manage_plugin_page.php">Керування Модулями</a></li>
+<li class=""><a href="/adm_permissions_report.php">Управління конфігурацією</a></li>
+</ul>
+
+<div class="col-md-12 col-xs-12">
+    <div class="space-10"></div>
+	<div class="widget-box widget-color-blue2">
+	<div class="widget-header widget-header-small">
+		<h4 class="widget-title lighter">
+			<i class="fa fa-puzzle-piece ace-icon"></i>			Проекти		</h4>
+	</div>
+	<div class="widget-body">
+	<div class="widget-main no-padding">
+	<div class="widget-toolbox padding-8 clearfix">
+		<form method="post" action="manage_proj_create_page.php" class="form-inline inline single-button-form"><input type="hidden" name="manage_proj_create_page_token" value="20230519avr8x_GS1ruaICbqstViCx1PWXRpcoOX"><button type="submit" class="btn btn-primary btn-white btn-round">Створити новий проект</button></form>	</div>
+	<div class="table-responsive">
+	<table class="table table-striped table-bordered table-condensed table-hover">
+		<thead>
+			<tr>
+				<th><a href="manage_proj_page.php?sort=name&amp;dir=DESC">Назва</a>&nbsp;<i class="fa fa-caret-up fa-lg blue"></i>				</th>
+				<th><a href="manage_proj_page.php?sort=status&amp;dir=ASC">Статус</a>				</th>
+				<th><a href="manage_proj_page.php?sort=enabled&amp;dir=ASC">Ввімкнений</a>				</th>
+				<th><a href="manage_proj_page.php?sort=view_state&amp;dir=ASC">Рівень доступу</a>				</th>
+				<th><a href="manage_proj_page.php?sort=description&amp;dir=ASC">Опис</a>				</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=18">2d5286e0-821c-487c-b2aa-b82580024422</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=22">3ad902e0-01c1-495f-9ee3-6090cb9baad6</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=26">4a29bd77-bd82-4002-a1e1-2c27891fb41c</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=28">14c9ee5c-8930-4549-97e4-190c878c3d64</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=29">92ba10b2-f3e1-4754-80a9-9c51876225e1</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=13">867bfd10-d811-4d1c-81f8-116a8cc13f08</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=11">984ab190-f261-46a0-a3fe-d6b7953b8ce8</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=25">9936e702-63e3-448d-822d-2c29cb15ab99</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=23">a6ba496d-1e29-4a4b-a05a-e73466119587</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=20">a57a752a-2a9e-46a4-b2df-e054e5bb636d</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=14">aa39e909-e725-47f2-92ee-3afda74e714e</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=15">c2cc2397-3fb7-4952-8566-46dac105c25b</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=19">c3accb0c-1d87-457c-b248-9de41500f9f2</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=17">d8682961-f217-490d-9fae-36b527555989</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=16">e2e4b9ab-6507-4a6b-aee5-e4dcc7d54149</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=10">e3ab44c4-59ae-45f9-be24-56b55bbd6501</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=24">ebbd9231-a42b-4d5e-9036-da0499a13507</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=27">f9d58cc9-61ba-4e65-8687-1b29c7a5bccd</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=12">fbff973c-5ca4-435e-afa3-4d903012137a</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>			<tr>
+				<td>
+					<a href="manage_proj_edit_page.php?project_id=21">fd2b1d06-eaad-4cc4-9d8e-4ada4090e9f0</a>
+				</td>
+				<td>розробка</td>
+				<td class="center"><i class="fa fa-check fa-lg"></i></td>
+				<td>спільний</td>
+				<td>Description</td>
+			</tr>		</tbody>
+	</table>
+</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="space-10"></div>
+
+	<div id="categories" class="form-container">
+
+	<div class="widget-box widget-color-blue2">
+	<div class="widget-header widget-header-small">
+		<h4 class="widget-title lighter">
+			<i class="fa fa-sitemap ace-icon"></i>			Глобальні категорії		</h4>
+	</div>
+	<div class="widget-body">
+		<div class="widget-main no-padding">
+		<div class="table-responsive">
+		<table class="table table-striped table-bordered table-condensed table-hover">
+		<thead>
+			<tr>
+				<td>Категорія</td>
+				<td>Кому призначити</td>
+								<td class="center">Дії</td>
+							</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>General</td>
+				<td></td>
+								<td class="center">
+<div class="btn-group inline"><div class="pull-left"><form method="post" action="manage_proj_cat_edit_page.php?id=1&amp;project_id=0" class="form-inline inline single-button-form"><input type="hidden" name="manage_proj_cat_edit_page_token" value="20230519I5P0YWrMqPWK2IDMeztAWa5cK9aYMIkR"><button type="submit" class="btn btn-primary btn-xs btn-white btn-round">Редагувати</button></form></div><div class="pull-left"><form method="post" action="manage_proj_cat_delete.php?id=1&amp;project_id=0" class="form-inline inline single-button-form"><input type="hidden" name="manage_proj_cat_delete_token" value="20230519mMoNlKv2dSyTMJHlethYMLteToGVtrsl"><button type="submit" class="btn btn-primary btn-xs btn-white btn-round">Вилучити</button></form></div>				</div></td>
+						</tr>
+		</tbody>
+	</table>
+	</div>
+	</div>
+
+	<form method="post" action="manage_proj_cat_add.php" class="form-inline">
+		<div class="widget-toolbox padding-8 clearfix">
+			<input type="hidden" name="manage_proj_cat_add_token" value="202305195bwC-xlUWWmZ6Mu_xBdhRTltQtUhCXOy">			<input type="hidden" name="project_id" value="0">
+			<input type="text" name="name" class="input-sm" size="32" maxlength="128">
+			<input type="submit" class="btn btn-primary btn-sm btn-white btn-round" value="Додати категорію">
+			<input type="submit" name="add_and_edit_category" class="btn btn-primary btn-sm btn-white btn-round" value="Додавати і редагувати категорії">
+		</div>
+	</form>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="space-20"></div>
+<div class="footer noprint">
+<div class="footer-inner">
+<div class="footer-content">
+<div class="col-md-6 col-xs-12 no-padding">
+<address>
+<strong>Powered by <a href="https://www.mantisbt.org" title="bug tracking software">MantisBT </a></strong> <br>
+<small>Copyright © 2000 - 2023 MantisBT Team</small><br><small>Зв'яжіться з <a href="mailto:seven0tears@gmail.com" title="Написати веб-майстру по ел. пошті">адміністратором</a> для отримання допомоги</small><br>
+</address>
+</div>
+<div class="col-md-6 col-xs-12">
+<div class="pull-right" id="powered-by-mantisbt-logo">
+<a href="https://www.mantisbt.org" title="Mantis Bug Tracker: a free and open source web based bug tracking system."><img src="/images/mantis_logo.png" width="102" height="35" alt="Powered by Mantis Bug Tracker: a free and open source web based bug tracking system."></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="btn-scroll-up btn btn-sm btn-inverse display" id="btn-scroll-up" href="#">
+<i class="fa fa-angle-double-up ace-icon icon-only bigger-110"></i>
+</a>
+</div>
+	<script type="text/javascript" src="/js/bootstrap-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/js/moment-with-locales-2.29.4.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap-datetimepicker-4.17.47.min.js"></script>
+	<script type="text/javascript" src="/js/typeahead.jquery-1.3.0.min.js"></script>
+	<script type="text/javascript" src="/js/list-1.5.0.min.js"></script>
+	<script type="text/javascript" src="/js/ace.min.js"></script>
+
+
+</body></html>
