@@ -2,6 +2,7 @@ package hibernate;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import java.security.NoSuchAlgorithmException;
+import java.sql.Blob;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
@@ -23,7 +24,7 @@ public class HibernateMain  {
 
 
     }
-    public static void saveToWebLogs(Long id,String dom ,String logger) {
+    public static void saveToWebLogs(Long id, Blob dom , String logger) {
         SaveWebLogsModel saveLogs = new SaveWebLogsModel();
         saveLogs.setId(id);
         saveLogs.setDom(dom);

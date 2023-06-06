@@ -23,8 +23,8 @@ public class SaveWebLogsModel {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "Dom",length = 15000)
-    private String Dom;
+    @Column(name = "Dom",length = 50000)
+    private Blob Dom;
 
     @Column(name = "Logger")
     private String Logger;

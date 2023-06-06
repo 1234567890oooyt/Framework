@@ -8,6 +8,10 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import javax.sql.rowset.serial.SerialBlob;
+import java.sql.Blob;
+import java.sql.SQLException;
+
 import static hibernate.HibernateMain.*;
 
 public class AllureTestListener implements ITestListener {
@@ -30,9 +34,18 @@ public class AllureTestListener implements ITestListener {
         ITestListener.super.onTestFailure(result);
         getScreenshot();
         getDom();
-//        beginTrans();
-//        saveToWebLogs(result.getEndMillis(),getDom(),result.getName());
-//        closeSession();
+
+        byte[] byteData = getDom().getBytes();
+        Blob docInBlob;
+        try {
+            docInBlob = new SerialBlob(byteData);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        beginTrans();
+        saveToWebLogs(result.getEndMillis(),docInBlob,result.getName());
+        closeSession();
 
     }
     @Override
